@@ -33,11 +33,11 @@ function Articles() {
             <a href="#" className="cursor-pointer">
                 <article>
                     <div>
-                        <img src={article.cover} alt="article cover" />
+                        <img src={article.cover} alt="article cover" className="w-full h-56 md:h-48 object-cover"/>
                     </div>
                     <section className="p-6">
                         <span className="text-Grayishblue text-xs">By {article.author}</span>
-                        <h4 className="text-DarkBlue text-lg font-normal my-2 leading-5">{article.title}</h4>
+                        <h4 className="text-DarkBlue text-lg font-normal my-2 leading-5 hover:text-LimeGreen">{article.title}</h4>
                         <p className="text-Grayishblue text-sm">{article.summary}</p>
                     </section>
                 </article>
@@ -47,10 +47,12 @@ function Articles() {
 
     return (
         <section className="bg-VeryLightGray py-12 px-4">
-            <h2 className="text-3xl text-center mx-auto mb-6">Latest Articles</h2>
-            <ul className="flex flex-col gap-8">
-                {articlesList}
-            </ul>
+            <div className="max-w-7xl mx-auto">
+                <h2 className="text-3xl text-center mx-auto mb-6 md:text-start">Latest Articles</h2>
+                <ul className="flex flex-col gap-8 md:flex-row">
+                    {articlesList}
+                </ul>
+            </div>
         </section>
     );
 }

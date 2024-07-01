@@ -7,7 +7,7 @@ import Footer from "./Footer.jsx";
 function App() {
 
   return (
-    <div className="text-base">
+    <div className="text-base relative overflow-hidden">
     <Header />
     <HeroSection />
     <Services />
