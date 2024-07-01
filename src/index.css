@@ -8,3 +8,12 @@
 ion-icon {
     font-size: 2.0rem;
 }
+
+footer ion-icon {
+    font-size: 1.2rem;
+    color: hsl(0, 0%, 98%);
+}
+
+footer ion-icon:hover {
+    color: hsl(136, 65%, 51%);
+}
