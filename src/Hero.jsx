@@ -3,16 +3,16 @@ import Button from "./Button";
 function HeroSection() {
 
     return (
-        <section className="mb-20 bg-White relative">
-            <div className="lg:flex lg:flex-row-reverse lg:mb-0 max-w-7xl mx-auto">
-                <picture>
-                    <source srcSet="/src/assets/bg-intro-mobile.svg" media="(max-width: 976px)"/>
-                    <img src="/src/assets/bg-intro-desktop.svg" alt="hero background" className="lg:relative lg:-right-40 lg:-bottom-32 w-full" />
+        <section className="mb-20 bg-VeryLightGray lg:mb-0">
+            <div className="lg:flex lg:flex-row-reverse lg:mb-0 xl:ml-[60px]">
+                <picture className="w-full">
+                    <source srcSet="/src/assets/bg-intro-mobile.svg" media="(max-width: 1024px)" className="w-full h-full"/>
+                    <img src="/src/assets/bg-intro-desktop.svg" alt="hero background" className="w-full"/>
                 </picture>
-                <img src="/src/assets/image-mockups.png" alt="website mockups" className="absolute -top-24 right-0 left-0 mx-auto lg:-right-32 lg:-top-36 lg:absolute" />
-                <article className="text-center px-4 md:col-start-1 md:row-start-1 md:self-center md:text-start md:flex-grow-0">
-                    <h1 className="font-normal text-4xl mb-4 lg:text-6xl">Next generation digital banking</h1>
-                    <p className="text-Grayishblue mb-7">
+                <img src="/src/assets/image-mockups.png" alt="website mockups" className="absolute w-full mx-auto -top-16 lg:-top-10 lg:-right-20 lg:w-[600px] xl:w-fit xl:-right-32 xl::mx-0 xl:-top-10 lg:absolute z-10" />
+                <article className="text-center px-4 lg:self-center lg:text-start">
+                    <h1 className="font-normal text-4xl mb-4 md:text-5xl xl:text-6xl">Next generation digital banking</h1>
+                    <p className="text-Grayishblue mb-7 xl:w-4/6">
                         Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.
                     </p>
                     <Button />
