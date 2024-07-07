@@ -29,7 +29,7 @@ function Articles() {
     ]
 
     const articlesList = articles.map((article, index) => 
-        <li className="bg-White rounded-md overflow-hidden" key={index}>
+        <li className="bg-White rounded-md overflow-hidden w-[300px]" key={index}>
             <a href="#" className="cursor-pointer">
                 <article>
                     <div>
@@ -48,8 +48,8 @@ function Articles() {
     return (
         <section className="bg-VeryLightGray py-12 px-4">
             <div className="max-w-7xl mx-auto">
-                <h2 className="text-3xl text-center mx-auto mb-6 md:text-start">Latest Articles</h2>
-                <ul className="flex flex-col gap-8 md:flex-row">
+                <h2 className="text-3xl text-center mx-auto mb-6 lg:text-start">Latest Articles</h2>
+                <ul className="flex gap-5 justify-center lg:justify-start flex-wrap">
                     {articlesList}
                 </ul>
             </div>

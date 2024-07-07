@@ -24,7 +24,7 @@ function Services() {
     ]
 
     const servicesList = services.map((service, index) => 
-        <li key={index}>
+        <li key={index} className="w-[300px]">
             <article className="text-center md:text-start">
                 <img src={service.logo} alt='service log' className="mx-auto mb-5 md:mx-0" />
                 <h3 className="font-normal text-lg mb-5">{service.title}</h3>
@@ -36,11 +36,11 @@ function Services() {
     return (
         <section className="bg-LightGrayishBlue py-12 px-4 ">
             <div className="max-w-7xl mx-auto">
-                <h2 className="text-3xl text-center mx-auto mb-3 md:text-start">Why choose Easybank?</h2>
-                <p className="text-center text-Grayishblue md:text-start md:w-4/6">
+                <h2 className="text-3xl text-center mx-auto mb-3 lg:text-start">Why choose Easybank?</h2>
+                <p className="text-center text-Grayishblue lg:text-start lg:w-3/6">
                     We levarage Open Banking to turn your bank account into you financial hub. Control your finances like never before.
                 </p>
-                <ul className="flex flex-col gap-8 mt-16 md:flex-row">
+                <ul className="flex mt-8 flex-wrap justify-center lg:justify-start gap-5">
                     {servicesList}
                 </ul>
             </div>
