@@ -12,20 +12,20 @@ function Header() {
                 </div>
                 <nav className="hidden md:block">
                     <ul className="flex gap-8">
-                        <li>
-                            <a className='nav-link' href="#">Home</a>
+                        <li className='relative'>
+                            <a className='hover:after:absolute hover:after:w-12 hover:after:h-1 hover:after:bg-LimeGreen hover:after:left-0 hover:after:right-0 hover:after:mx-auto hover:after:-bottom-7' href="#">Home</a>
                         </li>
-                        <li>
-                            <a className='nav-link' href="#">About</a>
+                        <li className='relative'>
+                            <a className='hover:after:absolute hover:after:w-12 hover:after:h-1 hover:after:bg-LimeGreen hover:after:left-0 hover:after:right-0 hover:after:mx-auto hover:after:-bottom-7' href="#">About</a>
                         </li>
-                        <li>
-                            <a className='nav-link' href="#">Contact</a>
+                        <li className='relative'>
+                            <a className='hover:after:absolute hover:after:w-12 hover:after:h-1 hover:after:bg-LimeGreen hover:after:left-0 hover:after:right-0 hover:after:mx-auto hover:after:-bottom-7' href="#">Contact</a>
                         </li>
-                        <li>
-                            <a className='nav-link' href="#">Blog</a>
+                        <li className='relative'>
+                            <a className='hover:after:absolute hover:after:w-12 hover:after:h-1 hover:after:bg-LimeGreen hover:after:left-0 hover:after:right-0 hover:after:mx-auto hover:after:-bottom-7' href="#">Blog</a>
                         </li>
-                        <li>
-                            <a className='nav-link' href="#">Careers</a>
+                        <li className='relative'>
+                            <a className='hover:after:absolute hover:after:w-12 hover:after:h-1 hover:after:bg-LimeGreen hover:after:left-0 hover:after:right-0 hover:after:mx-auto hover:after:-bottom-7' href="#">Careers</a>
                         </li>
                     </ul>
                 </nav>
