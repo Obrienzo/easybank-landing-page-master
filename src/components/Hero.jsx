@@ -3,9 +3,9 @@ import Button from "./Button";
 function HeroSection() {
 
     return (
-        <section className="mb-20 bg-VeryLightGray lg:mb-0">
-            <div className="lg:flex lg:flex-row-reverse lg:mb-0 xl:ml-[60px]">
-                <picture className="w-full">
+        <section className="relative mb-20 bg-VeryLightGray h-screen flex justify-center">
+            <div className="max-w-7xl">
+                <picture>
                     <source srcSet="/src/assets/bg-intro-mobile.svg" media="(max-width: 1024px)" className="w-full h-full"/>
                     <img src="/src/assets/bg-intro-desktop.svg" alt="hero background" className="w-full"/>
                 </picture>

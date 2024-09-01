@@ -1,8 +1,8 @@
-import Header from "./Header.jsx";
-import HeroSection from "./Hero.jsx";
-import Services from "./Services.jsx";
-import Articles from "./Articles.jsx";
-import Footer from "./Footer.jsx";
+import Header from "./components/Header.jsx";
+import HeroSection from "./components/Hero.jsx";
+import Services from "./components/Services.jsx"
+import Footer from "./components/Footer.jsx";
+import Articles from "./components/Articles.jsx";
 
 function App() {
 
