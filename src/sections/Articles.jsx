@@ -41,7 +41,7 @@ function Articles() {
     return (
         <section className="bg-VeryLightGray">
             <div className="px-5 py-16 lg:py-24 mx-auto max-w-6xl">
-                <h2 className="text-center xl:text-start xl:ml-3 mb-8 text-3xl text-DarkBlue">Latest Articles</h2>
+                <h2 className="text-center xl:text-start xl:ml-3 mb-12 text-3xl text-DarkBlue">Latest Articles</h2>
                 <ul className="flex flex-wrap justify-center gap-5">
                     {articlesList}
                 </ul>
