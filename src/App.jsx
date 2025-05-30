@@ -1,17 +1,19 @@
-import Header from "./components/Header.jsx";
-import HeroSection from "./components/Hero.jsx";
-import Services from "./components/Services.jsx"
-import Footer from "./components/Footer.jsx";
-import Articles from "./components/Articles.jsx";
+import Header from "./sections/Header";
+import HeroSection from "./sections/Hero";
+import Services from "./sections/Services"
+import Footer from "./sections/Footer";
+import Articles from "./sections/Articles";
 
 function App() {
 
   return (
-    <div className="text-base relative overflow-hidden">
+    <div className="text-base relative overflow-hidden bg-[url('/src/assets/bg-intro-mobile.svg')] bg-no-repeat bg-contain bg-top md:bg-none">
     <Header />
-    <HeroSection />
-    <Services />
-    <Articles />
+    <main>
+      <HeroSection />
+      <Services />
+      <Articles />
+    </main>
     <Footer />
     </div>
   )

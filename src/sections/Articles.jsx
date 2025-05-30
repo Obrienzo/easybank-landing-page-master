@@ -1,4 +1,4 @@
-
+import ArticleCard from "../components/ArticleCard";
 
 function Articles() {
     const articles = [
@@ -29,27 +29,20 @@ function Articles() {
     ]
 
     const articlesList = articles.map((article, index) => 
-        <li className="bg-White rounded-md overflow-hidden w-[300px]" key={index}>
-            <a href="#" className="cursor-pointer">
-                <article>
-                    <div>
-                        <img src={article.cover} alt="article cover" className="w-full h-56 md:h-48 object-cover"/>
-                    </div>
-                    <section className="p-6">
-                        <span className="text-Grayishblue text-xs">By {article.author}</span>
-                        <h4 className="text-DarkBlue text-lg font-normal my-2 leading-5 hover:text-LimeGreen">{article.title}</h4>
-                        <p className="text-Grayishblue text-sm">{article.summary}</p>
-                    </section>
-                </article>
-            </a>
-        </li>
+        <ArticleCard
+            key={index}
+            banner={article.cover}
+            author={article.author}
+            preview={article.summary}
+            title={article.title}
+        />
     )
 
     return (
-        <section className="bg-VeryLightGray py-12 px-4">
-            <div className="max-w-7xl mx-auto">
-                <h2 className="text-3xl text-center mx-auto mb-6 lg:text-start">Latest Articles</h2>
-                <ul className="flex gap-5 justify-center lg:justify-start flex-wrap">
+        <section className="bg-VeryLightGray">
+            <div className="px-5 py-16 lg:py-24 mx-auto max-w-6xl">
+                <h2 className="text-center xl:text-start xl:ml-3 mb-8 text-3xl text-DarkBlue">Latest Articles</h2>
+                <ul className="flex flex-wrap justify-center gap-5">
                     {articlesList}
                 </ul>
             </div>
