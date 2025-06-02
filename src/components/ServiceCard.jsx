@@ -2,7 +2,7 @@
 
 function ServiceCard({ index, icon, heading, description }) {
     return (
-        <li key={index} className="flex flex-col items-center text-center max-w-80 lg:w-64 sm:items-start sm:text-start">
+        <li key={index} className="flex flex-col items-center text-center max-w-80 sm:items-start sm:text-start">
             <div>
                 <img src={icon} alt="icon" />
             </div>

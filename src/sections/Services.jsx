@@ -37,13 +37,13 @@ function Services() {
     return (
         <section className="bg-LightGrayishBlue">
             <div className="px-5 py-12 lg:py-24 mx-auto max-w-6xl">
-                <div className="text-center mx-auto xl:mx-0 xl:text-start xl:ml-3 max-w-lg">
+                <div className="text-center mx-auto xl:mx-0 xl:text-start max-w-lg">
                     <h2 className="text-3xl mx-5 md:mx-0">Why choose Easybank?</h2>
                     <p className="mt-12 text-Grayishblue">
                         We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before.
                     </p>
                 </div>
-                <ul className="flex flex-wrap justify-center gap-5 mt-16">
+                <ul className="flex flex-wrap justify-center md:grid md:grid-cols-4 gap-5 mt-16">
                     {servicesList}
                 </ul>
             </div>
