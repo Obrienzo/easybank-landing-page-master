@@ -4,25 +4,29 @@ import Navigation from './Navigation';
 
 function Header() {
     const [ dropdown, setDropdown ] = useState(false);
+    const hamburger = '/src/assets/icon-hamburger.svg';
+    const close = '/src/assets/icon-close.svg';
 
     const handleDropdownClick = (event) => {
         setDropdown(prev => !prev);
     }
 
     return (
-        <header className='absolute w-full bg-White z-30'>
-            <nav className='max-w-6xl mx-auto p-5 flex justify-between items-center'>
+        <header className='absolute w-full bg-White z-50'>
+            <nav className='max-w-6xl mx-auto p-5 flex justify-between items-center relative'>
                 <div>
                     <a href="/index.html">
                         <img src="/src/assets/logo.svg" alt="web page logo" title='easybank home' />
                     </a>
                 </div>
-                <Navigation />
+                <Navigation
+                    dropdown={dropdown}
+                />
                 <div className='hidden md:block'>
                     <Button />
                 </div>
                 <button onClick={handleDropdownClick} className='md:hidden'>
-                    <img src="/src/assets/icon-hamburger.svg" alt="menu icon" title='menu' />
+                    <img src={dropdown ? close : hamburger} alt="menu icon" title='menu' />
                 </button>
             </nav>
         </header>
